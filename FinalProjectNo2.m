@@ -17,12 +17,12 @@ syms xx;
 f(xx) = piecewise(1 < xx < 3, 2 - 2 * abs(xx - 2), 0);
 u(:, 1) = double(f(x));
 
-%iterate to solve for u when t=1
+%iterate to solve for u when j=1
 for i = 2:m-1
    u(i,2) = (1/2) * ( u(i,1)*(2-2*lamda) + (u(i+1,1) + lamda*u(i-1,1)) );
 end
 
-%iterate to solve for u when t>1
+%iterate to solve for u when j>1
 for j = 2:n-1
    for i = 2:m-1
        u(i,j+1) = u(i,j)*(2-2*lamda) + (u(i+1,j) + lamda*u(i-1,j)) - u(i,j-1);
