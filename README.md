@@ -27,3 +27,11 @@ f(x) = {  2 − 2|x − 2|, 1 < x < 3
 The initial velocity of the string is g(x) = 0. Use finite differences to simulate the motion of
 the string with a step size in the x direction of h = 0.1 and a time step of k = 0.1. Create a
 movie of your results from t = 0 to t = 13. Plot your solution at t = 13.
+
+How to Run:
+
+Open FinalProjectNo2.m in MatLab and run. The code will generate the following three figures:
+
+1) A movie of the displacement of the string from t=0 to t=13
+2) A 3D graph of the displacement of the string over time
+3) A graph of the displacement of the string at t=13
