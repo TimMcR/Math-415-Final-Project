@@ -1,7 +1,8 @@
-# Math415_Final_Project
-Problem #2 for my final project in Math 415: Mathematical Modeling
+                    ----Intro----
 
-This code solves the following problem:
+This code solves problem #2 for my final project in Math 415: Mathematical Modeling
+
+                    ----PROBLEM----
 
 Simulate the motion of a vibrating string with fixed ends.
 
@@ -28,7 +29,17 @@ The initial velocity of the string is g(x) = 0. Use finite differences to simula
 the string with a step size in the x direction of h = 0.1 and a time step of k = 0.1. Create a
 movie of your results from t = 0 to t = 13. Plot your solution at t = 13.
 
-How to Run:
+                    ----Derivation---
+
+The solution to the displacement equation when j=1 is
+
+u(i,1) = (1/2)(u(i,1)(2-2lamda) + lamda(u(i+i,1) + u(i-1,1)))
+
+The solution to the displacement equation when j>1 is
+
+u(i,j+1) = u(i,j)(2-2lamda) + lamda(u(i+1,j) + u(i-1,j)) - u(i,j-1)
+
+                    ----How to Run----
 
 Open FinalProjectNo2.m in MatLab and run. The code will generate the following three figures:
 
